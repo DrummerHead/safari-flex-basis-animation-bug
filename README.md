@@ -20,7 +20,13 @@ iOS 9.3.5
 `navigator.appVersion === "5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G36 Safari/601.1"`  
 `navigator.userAgent === "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G36 Safari/601.1"`  
 
+
 ## Workaround
 
 - For `flex-direction: row` animate `width` instead of `flex-basis`
 - For `flex-direction: column` animate `height` instead of `flex-basis`
+
+
+## Flexbugs discussion
+
+https://github.com/philipwalton/flexbugs/issues/176
