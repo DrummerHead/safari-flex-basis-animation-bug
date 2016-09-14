@@ -1,0 +1,31 @@
+html {
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dizzy {
+  flex: 0 1 10em;
+
+  padding: 1em;
+  background-color: pink;
+  text-align: right;
+
+  animation-name: wobble;
+  animation-duration: 750ms;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wobble {
+  0% {
+    flex-basis: 20em;
+  }
+  100% {
+    flex-basis: 10em;
+  }
+}

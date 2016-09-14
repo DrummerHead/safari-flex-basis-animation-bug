@@ -1,0 +1,53 @@
+html {
+  font-family: sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+
+.dizzy {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10em;
+          flex: 0 1 10em;
+
+  padding: 1em;
+  background-color: pink;
+  text-align: right;
+
+  -webkit-animation-name: wobble;
+
+          animation-name: wobble;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    flex-basis: 20em;
+  }
+  100% {
+    flex-basis: 10em;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -ms-flex-preferred-size: 20em;
+        flex-basis: 20em;
+  }
+  100% {
+    -ms-flex-preferred-size: 10em;
+        flex-basis: 10em;
+  }
+}
